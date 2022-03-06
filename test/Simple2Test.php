@@ -6,8 +6,8 @@ class Simple2Test extends \PHPUnit\Framework\TestCase
     public function testGetName() //1st test case
     {
         $simple2 = new Simple2();
-        $simple2->setName('Muhammad');
-        $this->assertEquals($simple2->getName(), 'Muhammad');
+        $simple2->setName('Allado');
+        $this->assertEquals($simple2->getName(), 'Allado');
     }
 
     public function testGetAge()
@@ -20,15 +20,15 @@ class Simple2Test extends \PHPUnit\Framework\TestCase
     public function testFaveColor()
     {
         $simple2 = new Simple2();
-        $simple2->setFaveColor('Blue');
-        $this->assertEquals($simple2->getFaveColor(), 'Blue');
+        $simple2->setFaveColor('Black');
+        $this->assertEquals($simple2->getFaveColor(), 'Black');
     }
 
     public function testGetNameCheckString()
     {
         $simple2 = new Simple2();
-        $simple2 ->setName('Muhammad');
-        $this->assertIsString($simple2->getName(), 'Muhammad');
+        $simple2 ->setName('Allado');
+        $this->assertIsString($simple2->getName(), 'Allado');
     }
 
     public function testGetAgeCheckInt()
@@ -48,15 +48,15 @@ class Simple2Test extends \PHPUnit\Framework\TestCase
     public function testFaveColorCheckString()
     {
         $simple2 = new Simple2();
-        $simple2->setFaveColor('Blue');
-        $this->assertIsString($simple2->getFaveColor(), 'Blue');
+        $simple2->setFaveColor('Black');
+        $this->assertIsString($simple2->getFaveColor(), 'Black');
     }
 
     public function testGetTogetherInput()
     {
         $simple2 = new Simple2();
-        $simple2->setTogetherInput('Muhammad', 21, 'Blue');
-        $this->assertEquals($simple2->getTogetherInput(), 'Muhammad', 21, 'Blue');
+        $simple2->setTogetherInput('Allado', 22, 'Black');
+        $this->assertEquals($simple2->getTogetherInput(), 'Allado', 22, 'Black');
     }
 
 }
